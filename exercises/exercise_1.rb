@@ -14,11 +14,7 @@ puts "----------"
 
 
 class Store < ActiveRecord::Base
-
-end
-
-class Employee < ActiveRecord::Base
-
+	has_many :employees
 end
 
 burnaby = Store.create(name: "Burnaby", annual_revenue: 300000, mens_apparel: true, womens_apparel: true )
